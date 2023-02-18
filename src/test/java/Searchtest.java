@@ -8,11 +8,14 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
    @Test
    void successfulSearchTest() {
-      open("https://www.google.com////");
+      
+      public static String mag = "https://www.google.com////";
+
+      open(mag);
       $("[name=q]").setValue("selenide").pressEnter();
       $("[id=search]").shouldHave(text("https://selenide.org/"));
       $("[id=search]").shouldHave(text("https://selenide.org"));
-      $("[id=search]").shouldHave(text("https://selenide.org"));
+      
    }
 
    public x = 12
