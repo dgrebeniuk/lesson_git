@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
    @Test
    void successfulSearchTest() {
-      
+      public static String mag = "https://www.google.com////";
       public static String mag = "https://www.google.com////";
 
       open(mag);
